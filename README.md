@@ -1,6 +1,9 @@
 # Spotify_Downloader
 this python script allows you to download songs from spotify playlist
 but you need to have ffmpeg installed on your pc in order to use it
+
+
+
 ![SD Demo](into.gif)
 
 ### Usage
