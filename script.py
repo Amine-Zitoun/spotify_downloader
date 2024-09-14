@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup as bs
 import youtube_dl
 from youtube_search import YoutubeSearch
 import os
-url ="https://open.spotify.com/playlist/1qGdNJZENqM0UfKxC7i09i?si=fHI7_fKqSPiaCqUWJHKGeA"
+
 def get_tracks(url):
 	res = requests.get(url)
 	html = bs(res.text,'lxml')
@@ -42,7 +42,6 @@ def download_songs(tracklist,playlist_name):
 def main():
 	print("***************MADE BY YA BOI ZITOUNNNN************")
 	url = input("Enter url: ")
-	#url = "https://open.spotify.com/playlist/3sWZfGIwY3mqncSoc6hk9s?si=wP3euTolTKSRQ8x36p7c1g"
 	res,playlist_name = get_tracks(url)
 	songs =[]
 	for pp,track in zip(res.keys(),res.values()):
